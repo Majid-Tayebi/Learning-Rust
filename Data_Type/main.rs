@@ -58,6 +58,19 @@ fn main() {
 
     let z = "hello";
 
-    // -- Compound Types --
-    // ...
+    // Arrays Types
+   
+    let last_five_prices: [f64; 5] = [1.20, 1.22, 1.21, 1.25, 1.23];
+    
+    let first_price = last_five_prices[0]; // for access items in Array use indice 
+    
+
+    // Tuple Types
+    
+    let trade_info: (&str, f64, bool) = ("BTC", 52000.0, true);
+    
+    let (symbol, entry_price, is_profit) = trade_info; //for access the item in tuple
+    println!("Price was: {}", trade_info.1);  //for direct access specific item
+
+
 }
